@@ -1,0 +1,51 @@
+.header{
+    box-sizing: border-box;
+    background-color: black;
+    height: 169px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.header_banner{
+    height: 42px;
+}
+.header_wrapper{
+    height: 121px;
+}
+.header_content{
+    padding: 20px 0 12px 0;
+    height: 90px;
+}
+.header_logo{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px;
+}
+
+.nav_li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
+    list-style: none;
+    color: white;
+padding: 0;
+    font-family: Helvetica Neue LT Std,"sans-serif-light", sans-serif;
+line-height: 1.6;
+
+
+}
+.nav_l1{
+    padding: 0 8px 8px 8px;
+    line-height: 1;
+    width: max-content;
+    font-weight: 400;
+}
+.nav_l1.double{
+    color: rgb(209, 45, 86);
+    font-weight: bold;
+
+}
