@@ -206,6 +206,16 @@ border: solid 2px #bfd1dd;
 :hover.carousel__btn-right, :hover.carousel__btn-left{
     border:  solid 2px #ffff;
 }
+
+.transporterUs__head{
+    height: 130px;
+}
+.transporterUs__title{
+    font-size: 36px;
+    font-weight: bold;
+    border-top: solid 2px #000000;
+}
+
 .footer{
   
     background-color: black;
