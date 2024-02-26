@@ -16,6 +16,7 @@ html{
     font-family: "Roboto Condensed", sans-serif;
    margin: 0 auto;
     box-sizing: border-box;
+    
    
 
   }
@@ -23,6 +24,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    list-style: none;
   }
 
   body{
@@ -37,7 +39,7 @@ html{
   }
   .wrapper{
 
-max-width: 1280px;
+max-width: 1440px;
 width: 100%;
     display: flex;
     justify-content: center;
@@ -54,7 +56,7 @@ box-sizing: border-box;
     background-color: black;
     height: 120px;
 
-max-width: 1280px;
+max-width: 1440px;
 width: 100%;
 margin: 0 auto;
     position: fixed;
@@ -68,7 +70,7 @@ right: 0;
 .header_wrapper{
     box-sizing: inherit;
     height: 121px;
-max-width: 1280px;
+max-width: 1440px;
  width: 100%;
    
     margin: 0 auto;
@@ -123,14 +125,15 @@ background: rgb(155, 207, 190);
 display: block;
 flex-grow: 1;
  margin: 0 auto;
- max-width: 1280px;
+ max-width: 1440px;
  overflow: hidden;
 width: 100%;
+margin: 0 auto;
 }
 
 .content_container{
 height: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     width: 100%;
   margin-top: 121px;
   
@@ -139,7 +142,7 @@ height: 100%;
 .component{
   height: calc(100vh - 120px);
   margin-bottom: 20px;
-  max-width: 1280px;
+  max-width: 1440px;
   width: 100%;
 }
 .carousel{
@@ -255,12 +258,40 @@ border: solid 2px #bfd1dd;
 .transporter--us--image{
     width: 100%;
 }
+
+.component--hero{
+    margin: 0 auto;
+    padding: 0;
+    height: 80vh;
+    width: 100%;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c6cbce;
+    position: relative;
+    z-index: 2;
+  top: 250px;
+ 
+}
+   .hero__title{
+    font-size: 52px;
+    font-weight: 700;
+   } 
+
+.hero__video{
+    
+ margin: 0 auto;
+}
 .footer{
   
     background-color: black;
     padding: 45px 60px;
  height: 320px;
-  width: 1280px;  
+  width: 1440px;  
 }
 .footer_links{
     margin-bottom: 64px;
