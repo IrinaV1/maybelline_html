@@ -429,6 +429,116 @@ padding: 10px 0;
    
 }
 
+.component__content{
+    margin: 20px auto 60px;
+max-width: 900px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-form__wrapper{
+    max-width: 900px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bfd1dd;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.form__newsletter{
+    box-sizing: border-box;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.form__wrapper{
+    width: 100%;
+padding:  10px;
+}
+
+.content-form__name{
+    margin: 0 10px;
+  width: 50%;
+}
+.content-form__lastname{
+    margin: 0 10px;
+    width: 50%;  
+}
+.content-form__email{
+    padding: 0 14px;
+    margin: 0 auto;
+    width: 100%;  
+}
+.content-name{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+margin: 15px 0;
+padding: 5px;
+    width: 100%;
+}
+.input-form__name, .input-form__lastname {
+    width: 100%;
+        padding: 10px;
+    
+    }
+    
+.input-form__email, .input-form__retailer{
+    width: 100%;
+    padding: 10px ;
+    margin: 0;  
+}
+.date{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+margin: 15px 0;
+padding: 5px;
+    width: 100%;
+}
+.label-month{
+    width: 100%;
+    margin: 0 10px;
+}
+.label-day{
+    width: 100%;
+    margin: 0 10px;
+}
+#month{
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+#day{
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto; 
+}
+#retailer{
+    width: 100%;
+    padding: 10px; 
+}
+.label-retailer{
+    width: 100%;
+    padding: 10px; 
+}
+
+
+.input-submit_btn{
+    color: #ffffff;
+    background: #0e0d0d;
+    padding: 20px;
+    border: none;
+}
 /* 
 
 
