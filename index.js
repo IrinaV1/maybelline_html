@@ -11,7 +11,7 @@ function show(index) {
 
 controls.forEach((event) => {
     event.addEventListener('click', (event) => {
-        if (event.target.classList.contains("carousel__btn-left")) {
+        if (event.target.classList.contains("bi-chevron-compact-left")) {
             let index = imageIndex -1;
 
             if (index < 0) {
@@ -19,7 +19,7 @@ controls.forEach((event) => {
             }
 
             show(index);
-        } else if (event.target.classList.contains('carousel__btn-right'))
+        } else if (event.target.classList.contains('bi-chevron-compact-right'))
          {
 let index = imageIndex + 1;
 if (index >= images.length) {
