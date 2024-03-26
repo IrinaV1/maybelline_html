@@ -129,6 +129,7 @@ flex-grow: 1;
  overflow: hidden;
 width: 100%;
 margin: 0 auto;
+padding: 0;
 }
 
 .content_container{
@@ -136,7 +137,7 @@ height: 100%;
     max-width: 1440px;
     width: 100%;
   margin-top: 121px;
-  
+  padding: 0;
   
 }
 .component{
@@ -197,7 +198,7 @@ height: 100%;
     height: 40px;
     border-radius: 50%;
    position: absolute;
-   top: 50%;
+   top: 40%;
    
 font-size: 26px;
 font-weight: bold;
@@ -260,7 +261,11 @@ z-index: 2;
    font-family: Arial, sans-serif;
 width: 100%;
 }
-
+.transporterUs__title2{
+    font-size: 3.9rem;
+    letter-spacing: -1px;
+    font-weight: 700; 
+}
 .transporter__text{
     font-family: "Lato", sans-serif;
     font-size: 1.2rem;
@@ -303,7 +308,7 @@ padding-top: 5px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
-
+padding: 0;
     gap: 15px;
  
 }
@@ -470,10 +475,7 @@ max-width: 900px;
     width: 100%;
 padding:  10px;
 }
-.content_container{
 
-    padding: 0 50px;
-}
 .links__home{
     margin: 10px 0;
     padding: 15px 10px 10px;
@@ -661,45 +663,127 @@ padding: 5px;
           
         }
 
-        .transporter--module{
-            margin: 25px auto;
-            padding: 10px 5px;
-        }
-        .transporterUs__head{
-            height: 80px;
-          margin: 0 auto ;
-          padding: 0 30px;
-        
-        }
-    .transporterUs__title{
-         
-        
-           padding: 15px 0 5px 0;
-           font-family: Arial, sans-serif;
-        width: 100%;
-        }
-        .transporterUs__title2{
-            font-size: 2.7rem;
-            letter-spacing: -1px;
-            font-weight: 700;
-        }
-        .transporter__cta{
-            box-sizing: inherit;
-        
-            padding: 5px 0px;
-            margin: 10px 20px 0 0;
-            color: #000000;
-            font-size: 22px;
-            font-weight: 700;
-            letter-spacing: -0.25px;
-            width: 100px;
-            height: 50px;
-        }
+       
  }
 
 @media (max-width: 991.98px) { 
+    .component{
+        height: calc(70vh - 60px);
+        margin-bottom: 5px;
+
+      }
+    .carousel{
+        width: 100%;
+        height: 70vh;
+    
+    }
+    
+    .carousel__wrapper{
+        width: 100%;
+        height: 70vh;
+        box-sizing: border-box;
+    
+        position: relative;
+        overflow: hidden;
+    }
+    li.carousel__slide{
+        width: 100%;
+        height: 60vh;
+    
+    }
+    
+    .carousel--image{
+        
+        width: 100%;
+     height: 60vh;
+    
+      
+    }
 
 
+    .transporter--module{
+        margin: 25px auto;
+        padding: 10px 5px;
+    }
+    .transporterUs__head{
+        height: 80px;
+      margin: 0 auto ;
+      padding: 0 25px;
+    
+    }
+.transporterUs__title{
+     
+    
+       padding: 15px 0 5px 0;
+       font-family: Arial, sans-serif;
+    width: 100%;
+    }
+    .transporterUs__title2{
+        font-size: 2.7rem;
+        letter-spacing: -1px;
+        font-weight: 700;
+    }
+    .transporterUs{
+        height: 60vh;
+        padding: 5px 25px;
+    }
+    .transporter__cta{
+        box-sizing: inherit;
+    
+        padding: 5px 0px;
+        margin: 10px 20px 0 0;
+        color: #000000;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+        width: 100px;
+        height: 50px;
+    }
+
+    .component--hero{
+        margin: 0 auto;
+        padding: 0;
+    height: 60vh;
+        max-width: 100%;
+    }
+    .hero__content{
+   
+        max-width: 25%;
+       
+
+      top: 25%;
+      left: 35%;
+    margin: 0 auto;
+     
+    }
+    .hero__wrapper{
+height: 60vh;
+    }
+    .hero__title{
+        font-size: 32px;
+        font-weight: 700;
+     text-align: center;
+     line-height: 1;
+     font-family: Arial, sans-serif;
+     letter-spacing: -1;
+    
+    
+       } 
+    .hero__subtitle{
+        padding: 0 5px;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.1;
+        text-align: center;
+    }
+    .hero__video{
+     margin: 0 auto;
+    }
+    .hero__video-image{
+       border: none;
+       display: flex;
+       justify-content: flex-end;
+    }
 }
 
 @media (max-width: 767.98px) { 
