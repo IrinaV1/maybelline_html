@@ -91,7 +91,9 @@ max-width: 1440px;*/
     justify-content: center;
     margin: 0 auto 30px;
 }
-
+.header__burger{
+    display: none;
+}
 .nav_li{
     display: flex;
     flex-direction: row;
@@ -106,9 +108,10 @@ font-family: "Roboto Condensed", sans-serif;
 font-weight: 700;
 line-height: 1.6;
 
-
-
-
+}
+.nav_l1:hover{
+    color: rgb(158, 86, 116);
+    cursor: pointer;
 }
 .nav_l1{
     padding: 0 8px 8px 8px;
@@ -117,8 +120,11 @@ line-height: 1.6;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: -0.5px;
+    cursor: pointer;
 }
-
+.aside{
+    display: none;
+}
 
 .main{
 background: #ffff;
@@ -352,6 +358,16 @@ margin: 0 auto;
    display: flex;
    justify-content: flex-end;
 }
+.hero__link{
+   border-bottom: solid 2px #f3f3f5;
+   cursor: pointer;
+}
+.hero__link:hover{
+color: rgb(158, 86, 116);
+border-bottom: solid 2px rgb(158, 86, 116);
+font-weight: 800;
+font-size: 1.5rem;
+}
 .footer{
   
     background-color: black;
@@ -369,8 +385,11 @@ margin: 0 auto;
     height: 72px;
     padding-left: 6px;
     color: white;
+    cursor: pointer;
 }
-
+.footer_l1:hover, .footer_l2:hover{
+    color: rgb(158, 86, 116);
+}
 .footer__main-links{
     margin-bottom: 34px;
     display: block;
@@ -419,6 +438,15 @@ padding: 10px 0;
     margin-right: 16px;
  
 }
+.footer_l3:hover{
+   
+    cursor: pointer;
+    opacity: 0.4;
+    box-shadow: 1px 2px 4px 6px #f3f3f5;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out ;
+    
+}
 .footer_image{
     height: 27px;
     width: 27px;
@@ -465,15 +493,24 @@ padding:  10px;
 
 .links__home{
     margin: 10px 0;
-    padding: 15px 10px 10px;
+    padding: 15px 30px 10px;
     font-size: 12px;
+}
+
+.links__home-home:hover, .links__home-newsletter:hover{
+cursor: pointer;
+font-weight: 800;
+}
+.links__home-home{
+    color: #2d1485;
+    border-bottom: solid 1px #2d1485;
 }
 .head{
     position: relative;
 }
 .head-image {
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 30px;
   width: 100%;
    display: inline-block;
  
@@ -573,7 +610,13 @@ padding: 5px;
     align-items: flex-start;
     border-radius: 3px;
 }
+.input-submit_btn:hover{
+    cursor: pointer;
 
+    color: #ffff;
+    background-color: #050522;
+    transition: all 1s ease-in-out;
+}
 
 .form-text{
     padding: 0 10px;
@@ -584,21 +627,73 @@ padding: 5px;
 
 @media (max-width: 1199.98px) { 
     .header{
-        height: 60px;
-   
+        height: 80px;
+        padding: 0;
+  
     }
+    .header_wrapper{
+        height: 100%;
+        padding: 0;
+    }
+    .header_content{
+       padding: 0;
+        display: flex;
+        flex-direction: row;
+      height: 100%;
+    
+        width: 100%;
+       position: relative;
+     
+    }
+    .header_logo{
+        display: flex;
+        width: 100%;
+        margin: 0 140px 0 140px;
+    }
+    .header__burger{
+     display: flex;
+
+
+   position: absolute;
+   right: 25px;
+    }
+    .header__burger_menu{
+     background: #070707;
+        display: flex;
+width: 30px;
+height: 30px;
+    }
+
     .header_nav{
         display: none;
     }
-    .header_content{
+    .aside{
+       display: grid;
   
-
-        font-weight: 300;
-        padding: 20px 50px 5px 40px;
-        height: 80px;
-        width: 100%;
-        align-items: center ;
+        min-height: 100vh;
+        height: 100%;
+        background-color: #000000;
     }
+   
+    
+    .aside__nav_li {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 столбца */
+        grid-template-rows: repeat(3, auto); /* 3 строки */
+        row-gap: 25px;
+        column-gap: 20px;
+        list-style: none; /* Убираем маркеры списка */
+        padding: 5px; /* Убираем отступы */
+        margin: 30px auto; /* Убираем отступы */
+    }
+    
+    .aside__nav_l1 {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        color: #ffff;
+    }
+    
     .content_container{
         height: 100%;
             max-width: 1440px;
@@ -922,6 +1017,9 @@ line-height: 0.9;
  }
 
 @media (max-width: 991.98px) { 
+    .header_content{
+        padding: 0;
+    }
     .component{
   
         margin-bottom: 5px;
@@ -975,10 +1073,10 @@ width: auto;
     }
     .hero__content{
    
-        max-width: 25%;
+        max-width: 35%;
        
 
-      top: 25%;
+      top: 22%;
       left: 35%;
     margin: 0 auto;
      
@@ -1213,7 +1311,7 @@ margin: 0 auto;
       
       .transporter--us--card {
         width: 280px; /* Ширина карточки */
-        height: 90%;
+        height: 100%;
          /* Высота карточки */
       }
       
@@ -1466,7 +1564,7 @@ padding: 0;
     .transporterUs {
         overflow-x: auto; /* Добавляет горизонтальную полосу прокрутки */
         white-space: nowrap; 
-        height: 60vh;
+        height: 80vh;
 margin: 0 auto 50px;
 padding: 0 10px;
       }
