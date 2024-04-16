@@ -652,19 +652,32 @@ padding: 5px;
     }
     .header__burger{
      display: flex;
-
-
    position: absolute;
    right: 25px;
+   width: 30px;
+height: 30px;
+border: none;
     }
+   /* .header__close_menu{
+        background: #070707;
+        display: flex;
+width: 30px;
+height: 30px;
+border: none;
+
+    }*/
     .header__burger_menu{
      background: #070707;
         display: flex;
 width: 30px;
 height: 30px;
+border: none;
     }
 
     .header_nav{
+        display: none;
+    }
+    .close{
         display: none;
     }
     .aside{
@@ -679,12 +692,11 @@ height: 30px;
     .aside__nav_li {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 столбца */
-        grid-template-rows: repeat(3, auto); /* 3 строки */
-        row-gap: 25px;
-        column-gap: 20px;
+        grid-template-rows: repeat(2, auto); /* 3 строки */
+        gap: 10px;
         list-style: none; /* Убираем маркеры списка */
         padding: 5px; /* Убираем отступы */
-        margin: 30px auto; /* Убираем отступы */
+        margin: 30px 10px; /* Убираем отступы */
     }
     
     .aside__nav_l1 {
@@ -692,6 +704,12 @@ height: 30px;
         border: 1px solid #ccc;
         text-align: center;
         color: #ffff;
+        background: #0e0d0d;
+        cursor: pointer;
+    }
+    .aside__nav_l1:hover{
+    color: #c6cbce;
+    font-size: 1.1rem;
     }
     
     .content_container{
@@ -1199,6 +1217,15 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 @media (max-width: 767.98px) { 
+    .aside__nav_li {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 4 столбца */
+        grid-template-rows: repeat(3, auto); /* 3 строки */
+        gap: 10px;
+        list-style: none; /* Убираем маркеры списка */
+        padding: 5px; /* Убираем отступы */
+        margin: 30px 10px; /* Убираем отступы */
+    }
 .component{
     height: calc(100vh - 60px) ;
     max-width: 770px;
@@ -1504,7 +1531,15 @@ padding: 0;
  }
 
 @media (max-width: 575.98px) { 
-   
+    .aside__nav_li {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 столбца */
+        grid-template-rows: repeat(3, auto); /* 3 строки */
+        gap: 10px;
+        list-style: none; /* Убираем маркеры списка */
+        padding: 5px; /* Убираем отступы */
+        margin: 30px 10px; /* Убираем отступы */
+    }
     .transporter--module{
         margin: 25px auto;
         padding:  0;

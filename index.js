@@ -1,8 +1,29 @@
 const images = document.querySelectorAll('.carousel--image');
 const controls = document.querySelectorAll('.controls');
+
+const aside = document.querySelector('.aside');
+
+const burgerBtn = document.querySelector('.header__burger');
+const closeBtn = document.querySelector('.header__close');
+
+
+    burgerBtn.addEventListener('click', function() {
+       aside.classList.toggle('aside');
+       console.log('click')
+       burgerBtn.innerHTML = 'X';
+ });
+burgerBtn.addEventListener('click', function() {
+    aside.classList.contains('aside');
+    console.log("close")
+    burgerBtn.innerHTML = burgerBtn;
+});
+    
+
+
+
+
+
 let imageIndex = 0;
-
-
 function show(index) {
     images[imageIndex].classList.remove('active');
     images[index].classList.add('active');
@@ -43,3 +64,4 @@ show(index);
 show(imageIndex);
 
 startSlider();
+
