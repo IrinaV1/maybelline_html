@@ -172,7 +172,7 @@ height: 100%;
 .carousel--image{
     transition: all 0.3s;
     width: 100%;
- height: 100%;
+ height: auto;
    position: absolute;
    top: 0;
    left: 0;
@@ -1277,14 +1277,15 @@ grid-template-columns: repeat(2, 1fr);
     
     }
     .carousel--image.active{
-        height: 90vh; /* Занимает всю высоту враппера */
+        max-height: 90vh; 
+        height: 100%;/* Занимает всю высоту враппера */
+        max-width: 100%;
         width: auto; /* Пропорциональная ширина */
       /*  max-width: none; /* Скрытие лишней ширины изображения */
-       /* object-fit: contain; /* Изображение занимает всю высоту враппера и имеет пропорциональную ширину */
-        /* object-position: center;*/
-        background-size: contain; /* Изображение подстраивается, чтобы вместиться в карусель */
-        background-position: center; /* Центрирование области изображения */
-        background-repeat: no-repeat;
+        object-fit: cover; /* Изображение занимает всю высоту враппера и имеет пропорциональную ширину */
+    
+/* Центрирование области изображения */
+      
     }
 
     .transporter--module{
