@@ -497,11 +497,15 @@ padding:  10px;
     font-size: 12px;
 }
 
-.links__home-home:hover, .links__home-newsletter:hover{
+.links__home-home:hover, .links__home-newsletter:hover, .links__home-menu:hover{
 cursor: pointer;
 font-weight: 800;
 }
-.links__home-home{
+.links__home:active{
+    color: #5f4ca5;
+ 
+}
+.link_active{
     color: #2d1485;
     border-bottom: solid 1px #2d1485;
 }
@@ -1555,8 +1559,16 @@ padding: 0;
  }
 
 @media (max-width: 575.98px) { 
+    .header__burger{
+        right: 5px;
+    }
     .header_logo{
         margin: 0 80px;
+    
+        font-size: 20px;
+    }
+    .logo_img{
+        width: 80%;
     }
     .aside__nav_li {
         display: grid;
